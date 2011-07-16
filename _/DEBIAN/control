@@ -1,0 +1,10 @@
+Package: us.mxms.hudslider
+Name: HudSlider
+Depends: mobilesubstrate
+Version: 0.0.1-5
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Maximus
+Author: Maximus
+Section: Tweaks
+Installed-Size: 16
