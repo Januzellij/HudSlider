@@ -27,7 +27,7 @@ static UISlider *slider = nil;
 	%orig;
 	slider.value = progress;	
 }
-%new(v@:@:)
+%new
 - (void)progressChanged:(UISlider *)slide {
 	[self setProgress:slide.value];
 	[(SBMediaController *)[%c(SBMediaController) sharedInstance] setVolume:slide.value];
