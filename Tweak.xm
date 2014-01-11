@@ -9,7 +9,10 @@ static UISlider *slider = nil;
 
 - (id)initWithHUDViewLevel:(int)hudviewLevel {
 	%orig;
-	slider = [[UISlider alloc] initWithFrame:CGRectMake(10, 5, 140, 50)];
+	slider = [[UISlider alloc] initWithFrame:CGRectMake(10, 110, 140, 50)];
+	[slider setThumbImage:[[[UIImage alloc] init] autorelease] forState:UIControlStateNormal];
+	[slider setMinimumTrackImage:[[[UIImage alloc] init] autorelease] forState:UIControlStateNormal];
+	[slider setMaximumTrackImage:[[[UIImage alloc] init] autorelease] forState:UIControlStateNormal];
 	[slider addTarget:self action:@selector(progressChanged:) forControlEvents:UIControlEventValueChanged];
 	[slider setMinimumValue: 0.0];
 	slider.value = [(SBMediaController *)[%c(SBMediaController) sharedInstance] volume];
