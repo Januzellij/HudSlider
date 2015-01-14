@@ -1,1 +1,4 @@
 Some fixes, thanks to Bobnelson! :P
+
+This fork is updated for arm64, and the slider is now the line of volume "blocks".
+The slider knob is the last highlighted block.
